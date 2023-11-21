@@ -26,15 +26,16 @@ void loop()
 }
 #else
 
+
 int main()
 {
-    Smenu m[] = 
+  
+    Smenu m[] =
     {
-        1,"m1",
-        2,"m2", 
-        3,"m3", 
-        4,"exit",
-
+        1,"m1",&consoleMenu::read,
+        2,"m2",&consoleMenu::read,
+        3,"m3",&consoleMenu::read, 
+        4,"exit",&consoleMenu::exit,
         NULL,
     };
    
